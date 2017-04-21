@@ -9,6 +9,8 @@ namespace src\Inflections\En;
  */
 class Plural
 {
+    public static $version = 1;
+
     public static $plural = [
         '/(s)tatus$/i' => '\1\2tatuses',
         '/(quiz)$/i' => '\1zes',

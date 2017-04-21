@@ -8,6 +8,8 @@ namespace Inflections\En;
  */
 class Singular
 {
+    public static $version = 1;
+
     public static $rules = [
         '/(s)tatuses$/i' => '\1\2tatus',
         '/^(.*)(menu)s$/i' => '\1\2',

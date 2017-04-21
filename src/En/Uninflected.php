@@ -9,6 +9,8 @@ namespace Inflections\En;
  */
 class Uninflected
 {
+    public static $version = 1;
+
     public static $uninflected = [
         'Amoyese' => true,
         'bison' => true,
