@@ -1,0 +1,12 @@
+# emacs
+*~
+\#*\#
+
+# bin
+bin/phpunit
+bin/php-cs-fixer
+
+# php-cs-fixer
+.php_cs.cache
+
+vendor
