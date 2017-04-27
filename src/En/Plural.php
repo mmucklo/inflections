@@ -12,9 +12,8 @@ class Plural
     public static $version = 1;
 
     public static $plural = [
-        '/(s)tatus$/i' => '\1\2tatuses',
+        '/(s)tatus$/i' => '\1tatuses',
         '/(quiz)$/i' => '\1zes',
-        '/^(ox)$/i' => '\1en',
         '/([m|l])ouse$/i' => '\1ice',
         '/(matr|vert|ind)(ix|ex)$/i' => '\1ices',
         '/(x|ch|ss|sh)$/i' => '\1es',
@@ -28,7 +27,7 @@ class Plural
         '/(m)an$/i' => '\1en',
         '/(c)hild$/i' => '\1hildren',
         '/(f)oot$/i' => '\1eet',
-        '/(buffal|ech|her|potat|tomat|volcan|vet)o$/i' => '\1\2oes',
+        '/(buffal|ech|her|potat|tomat|volcan|vet)o$/i' => '\1oes',
         '/(alumn|bacill|cact|foc|fung|nucle|radi|stimul|syllab|termin|vir)us$/i' => '\1i',
         '/us$/i' => 'uses',
         '/(alias)$/i' => '\1es',

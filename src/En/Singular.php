@@ -3,7 +3,14 @@
 namespace Inflections\En;
 
 /**
- * English Plural Inflections
+ * Singular English Inflections
+ *
+ * To add/or modify, change any of the lists.
+ *
+ * Encapsulated in a class for ease of understanding,
+ * however variables specifically left static and
+ * public for now for performance of access.
+ *
  *   See https://github.com/doctrine/inflector/blob/master/lib/Doctrine/Common/Inflector/Inflector.php.
  */
 class Singular
