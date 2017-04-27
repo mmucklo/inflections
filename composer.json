@@ -22,6 +22,9 @@
 	    "Inflections\\": "src/"
 	}
     },
+    "autoload-dev": {
+        "psr-4": { "Inflections\\Tests\\": "test/" }
+    },
     "config": {
         "bin-dir": "bin"
     }

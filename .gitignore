@@ -10,3 +10,4 @@ bin/php-cs-fixer
 .php_cs.cache
 
 vendor
+.idea
