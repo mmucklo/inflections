@@ -11,3 +11,5 @@ bin/php-cs-fixer
 
 vendor
 .idea
+
+clover_code_coverage.out
