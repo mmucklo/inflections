@@ -1,6 +1,6 @@
 <?php
 
-namespace src\Inflections\En;
+namespace Inflections\En;
 
 /**
  * English Plural Inflections
@@ -11,7 +11,7 @@ class Plural
 {
     public static $version = 1;
 
-    public static $plural = [
+    public static $rules = [
         '/(s)tatus$/i' => '\1tatuses',
         '/(quiz)$/i' => '\1zes',
         '/([m|l])ouse$/i' => '\1ice',
@@ -37,15 +37,15 @@ class Plural
         '/$/' => 's', ];
 
     public static $uninflected = [
-        '.*[nrlm]ese',
-        '.*deer',
-        '.*fish',
-        '.*measles',
-        '.*ois',
-        '.*pox',
-        '.*sheep',
-        'people',
-        'cookie', ];
+        '/.*[nrlm]ese$/',
+        '/.*deer$/',
+        '/.*fish$/',
+        '/.*measles$/',
+        '/.*ois$/',
+        '/.*pox$/',
+        '/.*sheep$/',
+        '/people$/',
+        '/cookie$/', ];
 
     public static $irregular = [
         'automaton' => 'automata',

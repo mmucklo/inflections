@@ -3,7 +3,7 @@
 namespace Inflections\En;
 
 /**
- * Singular English Inflections
+ * Singular English Inflections.
  *
  * To add/or modify, change any of the lists.
  *
@@ -56,14 +56,14 @@ class Singular
         '/s$/i' => '', ];
 
     public static $uninflected = [
-        '.*[nrlm]ese',
-        '.*deer',
-        '.*fish',
-        '.*measles',
-        '.*ois',
-        '.*pox',
-        '.*sheep',
-        '.*ss',
+        '/.*[nrlm]ese$/',
+        '/.*deer$/',
+        '/.*fish$/',
+        '/.*measles$/',
+        '/.*ois$/',
+        '/.*pox$/',
+        '/.*sheep$/',
+        '/.*ss$/',
     ];
 
     public static $irregular = [

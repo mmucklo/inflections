@@ -1,20 +1,20 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Inflections\En\Singular;
+use Inflections\En\Plural;
 
-class SingularTest extends TestCase
+class PluralTest extends TestCase
 {
     public function testVersion()
     {
-        $this->assertGreaterThan(0, Singular::$version);
+        $this->assertGreaterThan(0, Plural::$version);
     }
 
     public function testRules()
     {
-        $this->assertNotNull(Singular::$rules);
-        $this->assertTrue(is_array(Singular::$rules));
-        foreach (Singular::$rules as $rule => $sub) {
+        $this->assertNotNull(Plural::$rules);
+        $this->assertTrue(is_array(Plural::$rules));
+        foreach (Plural::$rules as $rule => $sub) {
             @$result = preg_match($rule, null);
             $this->assertNotFalse($result, "Rule $rule did not validate");
         }
@@ -22,10 +22,10 @@ class SingularTest extends TestCase
 
     public function testUninflected()
     {
-        $this->assertNotNull(Singular::$uninflected);
-        $this->assertTrue(is_array(Singular::$uninflected));
+        $this->assertNotNull(Plural::$uninflected);
+        $this->assertTrue(is_array(Plural::$uninflected));
 
-        foreach (Singular::$uninflected as $uninflected) {
+        foreach (Plural::$uninflected as $uninflected) {
             @$result = preg_match($uninflected, null);
             $this->assertNotFalse($result, "Uninflected rule $uninflected did not validate");
         }
@@ -33,9 +33,9 @@ class SingularTest extends TestCase
 
     public function testIrregular()
     {
-        $this->assertNotNull(Singular::$irregular);
+        $this->assertNotNull(Plural::$irregular);
 
-        foreach (Singular::$irregular as $key => $value) {
+        foreach (Plural::$irregular as $key => $value) {
             $this->assertNotEquals($key, $value);
         }
     }

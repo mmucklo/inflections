@@ -96,10 +96,10 @@ class Uninflected
         'Wenchowese' => true,
         'whiting' => true,
         'wildebeest' => true,
-        'Yengeese', ];
+        'Yengeese' => true, ];
 
     public static $rules = [
-        '.*?media',
-        'sea[- ]bass',
+        '/.*?media$/',
+        '/^sea[- ]bass$/',
     ];
 }
