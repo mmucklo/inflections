@@ -16,3 +16,6 @@ Inflections are purposefully set as public static variables so that they can be 
 
 Many thanks to:
 
+ * Doctrine
+ * Ruby on Rails
+ * Wikipedia
