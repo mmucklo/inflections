@@ -1,4 +1,5 @@
 # Inflections
+[![Build Status](https://travis-ci.org/mmucklo/inflections.svg?branch=master)](https://travis-ci.org/mmucklo/inflections)
 
 These are a set of base inflections for use with an inflector library (such as [mmucklo/inflect](https://github.com/mmucklo/inflect).
 
