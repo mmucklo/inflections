@@ -45,7 +45,7 @@ class Plural
         '/.*pox$/',
         '/.*sheep$/',
         '/people$/',
-        '/cookie$/', ];
+        '/cookie$/'];
 
     public static $irregular = [
         'automaton' => 'automata',
